@@ -161,12 +161,59 @@
         }
     </style>
 </head>
+<style>
+            .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .logo-img {
+                height: 32px;
+            }
+            
+            .logo-text {
+                font-size: 20px;
+            }
+        }
+</style>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header-content">
                 <h1 class="header-title">HTML-CSS Projects</h1>
-                <a href="#" class="github-link">
+                <header>
+                    <div class="container">
+                        <nav class="nav-wrapper">
+                            <a href="#" class="logo">
+                                <img src="https://res.cloudinary.com/dvknx0hpm/image/upload/v1740480293/WhatsApp_Image_2025-02-25_at_16.10.43_6eb5984b-removebg-preview_t8uakb.png" alt="Vertex Solutions Logo" class="logo-img">
+                                <span class="logo-text">Vertex Solutions</span>
+                            </a>
+                            <!-- ... rest of the nav content ... -->
+                        </nav>
+                    </div>
+                </header>
+               
+               
+                <a href="https://github.com/Vertex-Solutions1922" class="github-link">
                     <i class="fab fa-github"></i>
                     Star on GitHub
                 </a>
@@ -206,11 +253,11 @@
                     <h3 class="project-title">Animated Login Form</h3>
                     <p class="project-description">Modern login form with smooth animations.</p>
                     <div class="project-buttons">
-                        <a href="https://github.com/Vertex-Solutions1922/Login-Form-Animated" class="project-btn source-btn">
+                        <a href="#" class="project-btn source-btn">
                             <i class="fab fa-github"></i>
                             Source
                         </a>
-                        <a href="https://vertex-solutions1922.github.io/Login-Form-Animated/" class="project-btn demo-btn">
+                        <a href="#" class="project-btn demo-btn">
                             <i class="fas fa-external-link-alt"></i>
                             Demo
                         </a>
@@ -270,11 +317,11 @@
                     <h3 class="project-title">Animated Login Form</h3>
                     <p class="project-description">Modern login form with smooth animations.</p>
                     <div class="project-buttons">
-                        <a href="https://github.com/Vertex-Solutions1922/Login-Form-Animated" class="project-btn source-btn">
+                        <a href="#" class="project-btn source-btn">
                             <i class="fab fa-github"></i>
                             Source
                         </a>
-                        <a href="https://vertex-solutions1922.github.io/Login-Form-Animated/" class="project-btn demo-btn">
+                        <a href="#" class="project-btn demo-btn">
                             <i class="fas fa-external-link-alt"></i>
                             Demo
                         </a>
@@ -285,7 +332,7 @@
             <!-- Project Card 2 -->
             <div class="project-card">
                 <div class="project-image-container">
-                    <img src="https://res.cloudinary.com/dvknx0hpm/image/upload/v1741953176/Screenshot_2025-03-14_163936_nv85wf.png" alt="Login Form" class="project-image">
+                    <img src="" alt="Login Form" class="project-image">
                 </div>
                 <div class="project-content">
                     <h3 class="project-title">Animated Login Form</h3>
@@ -318,5 +365,252 @@
             });
         });
     </script>
+<style>
+            /* Add these styles to your existing <style> section */
+                .footer {
+            background: #2d3436;
+            color: #fff;
+            padding: 60px 0 20px;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo i {
+            color: #00b894;
+            font-size: 32px;
+        }
+
+        .footer-logo h3 {
+            font-size: 24px;
+            color: #fff;
+        }
+
+        .footer-section p {
+            color: #b2bec3;
+            line-height: 1.6;
+        }
+
+        .footer-section h4 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-section h4::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background: #00b894;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .footer-section ul li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: #00b894;
+        }
+
+        .footer-section ul li a {
+            color: #b2bec3;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #00b894;
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .social-links a:hover {
+            background: transparent;
+            border-color: #00b894;
+            color: #00b894;
+            transform: translateY(-3px);
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #b2bec3;
+            margin-bottom: 15px;
+        }
+
+        .contact-info li i {
+            color: #00b894;
+            width: 20px;
+        }
+
+        .footer-bottom {
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-bottom p {
+            color: #b2bec3;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-bottom-links a {
+            color: #b2bec3;
+            text-decoration: none;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .footer-bottom-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background: #00b894;
+            transition: width 0.3s;
+        }
+
+        .footer-bottom-links a:hover {
+            color: #00b894;
+        }
+
+        .footer-bottom-links a:hover::after {
+            width: 100%;
+        }
+</style>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <i class="fas fa-code"></i>
+                    <h3>CodeCraft</h3>
+                </div>
+                <p>Exploring the art of web development through creative HTML and CSS projects. Building beautiful, responsive, and interactive web experiences.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#tutorials">Tutorials</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Project Categories</h4>
+                <ul>
+                    <li><a href="#components">UI Components</a></li>
+                    <li><a href="#layouts">Responsive Layouts</a></li>
+                    <li><a href="#animations">CSS Animations</a></li>
+                    <li><a href="#landing">Landing Pages</a></li>
+                    <li><a href="#games">CSS Games</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>contact@codecraft.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-globe"></i>
+                        <span>www.codecraft.com</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Web Dev Street, Code City</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-code-branch"></i>
+                        <span>Open for Collaboration</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 CodeCraft. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Use</a>
+                <a href="#sitemap">Sitemap</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
